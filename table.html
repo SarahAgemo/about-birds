@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="table.css">
+    <!-- <iframe src="https://i.ebayimg.com/images/g/p8QAAOSw~MJk9GLQ/s-l1600.png" width="500" border="none"></iframe> -->
+    <style>
+        .table {
+            padding: 15px;
+        }
+
+        #myheader {
+            color: red;
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 
+        tr is the table row
+        th is the table head
+        td is the table data or columns
+        th rowspan="2">Contract</th>
+        <th colspan="2">Name</th>
+     -->
+    <h1 id="lo">Everything about Tables</h1>
+    <p class="div1">
+        The Baganda, in whose territory this British settlement was located, then translated "Hill of the
+        Impala" as Akasozi ke'Empala. This was then shortened to K'empala and finally Kampala. Kasozi means
+        "hill", ke "of", and empala the plural of "impala". Hence the name "Kampala" came to refer to this
+        initial British colonial settlement that would later on spread out from the occupied Old Kampala hill
+        near the pre-existing Kibuga (capital) of the Buganda Kingdom.
+    </p>
+    <table border="1" class="table">
+        <caption id="myheader">Work</caption>
+        <tr>
+            <th>Company</th>
+            <th>Contract</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro Commercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td> Republic of Mexico</td>
+        </tr>
+        <tr>
+            <td>Microwave</td>
+            <td>viany</td>
+            <td>Uganda</td>
+        </tr>
+        <tr>
+            <td>solar Today</td>
+            <td>Sarah</td>
+            <td>Kenya</td>
+        </tr>
+    </table>
+    <!-- 
+        ul is unordered list
+        ol is ordered list, <ol type="I"> for roman numerals
+        dl is description list
+        dt is description terms
+        dd is used to define the terms
+       -->
+    <ul style="list-style-type:square;">
+        <li>Coffee</li>
+        <li>tea</li>
+        <li>Milk</li>
+    </ul>
+    <ol>
+        <li>flour</li>
+        <li>sugar</li>
+        <li>Blueband</li>
+    </ol>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl>
+    <img src="./images/crane.jpeg" width="200" height="200" class="img">
+    <img src="./images/green1.jfif" width="200" height="200" class="img">
+    <img src="https://i.ebayimg.com/images/g/p8QAAOSw~MJk9GLQ/s-l1600.png" width="200" height="200" class="img">
+
+    <p id="demo">Hi.</p>
+
+    <script>document.getElementById("demo").innerHTML = "Hello World!";</script>
+    <!-- <script>document.getElementById("demo").style.fontsize= "60px";</script> -->
+    <script>document.getElementById("demo").style.color = "red";</script>
+    <!-- <p>A simple math equation: <var> x </var> = 3 + 2; </p> -->
+
+    <form>
+        <input class="styled" type="button" value="OK" />
+    </form>
+    <form>
+        <label class="custom-button">
+            <input type="button" name="option" value="option1">
+            <input type="button" name="option" value="option2">
+
+        </label>
+    </form>
+    <!-- <form action="/action_page.php">Name: <input type="text" name="name"><input type="submit">
+    </form> 
+    used when adding a button and specify a path to follow.
+    -->
+    <form method="post" action="www.programiz.com/user">
+        <label for="firstname">First name:</label>
+        <input type="text" name="firstname" /><br />
+        <label for="lastname">Last name:</label>
+        <input type="text" name="lastname" /><br />
+        <input type="submit" />
+    </form>
+    <!-- The above POST is used to send data to a server. the above has two radio buttons -->
+    <form action="/action_page.php" method="post">Name: <input type="text" name="name">
+        <input type="submit">
+    </form>
+    <!-- the above is a radio button too using POST but just one line -->
+    <!-- Next lesson on css -->
+    <div id="ug">
+        Uganda
+    </div>
+    <div class="clas2">
+        About classes
+    </div>
+    <div class="clas2 clas3">
+        These are CSS classes
+    </div>
+    <!-- adding another class on same element affects the added class i.e clas3 but the first effects apply to both 
+     id: represents #
+     class: represents .
+     * : universal selecter applies styles to entire document, it only appears on css. it will affect only those elements which 
+         havent been affected by ID or class attributes.
+         grouping attributes: i.e h1,p,h3{ font-color: ;} or .h1,.p,.h3{font-color: ; } or #h1,#p,#h3{font-color: ;}
+         These apply the same effect to the listed attributes
+
+    -->
+    <p class="myn">Once upon a time, there lived a man called joeseph. <br>He had a wife called mary
+        and they lived in a small<br> town of Bethlehem.</p>
+
+    <p id="mine">For God so loved the World that He gave his only son <br>Jesus Christ that whoever believes
+        in him should not <br>perish but have eternal life.</p>
+
+    <h2>SALVATION IS FREE!</h2>
+
+    <div class="us">
+        Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua.
+    </div><br>
+    <br>
+    <a href="http://w3schools.com">This is a link</a>
+
+    <div style="border: solid 2px blue;  height: 80vh; margin: 2rem; border-radius: 10px;">
+        <div style="display: flex; flex-direction: row;">
+            <p style=" border: solid 2px brown; padding: 50px; margin: 3rem; text-align: justify; border-radius: 10px;"
+                class="first">
+                The Baganda, in whose territory this British settlement was located, then translated "Hill of the
+                Impala" as Akasozi ke'Empala. This was then shortened to K'empala and finally Kampala. Kasozi means
+                "hill", ke "of", and empala the plural of "impala". Hence the name "Kampala" came to refer to this
+                initial British colonial settlement that would later on spread out from the occupied Old Kampala hill
+                near the pre-existing Kibuga (capital) of the Buganda Kingdom.
+            </p>
+
+            <p style=" border: solid 2px brown; padding: 50px; margin: 3rem; text-align: justify; border-radius: 10px; "
+                class="first">
+                The Baganda, in whose territory this British settlement was located, then translated "Hill of the
+                Impala" as Akasozi ke'Empala. This was then shortened to K'empala and finally Kampala. Kasozi means
+                "hill", ke "of", and empala the plural of "impala". Hence the name "Kampala" came to refer to this
+                initial British colonial settlement that would later on spread out from the occupied Old Kampala hill
+                near the pre-existing Kibuga (capital) of the Buganda Kingdom.
+            </p>
+        </div>
+    </div>
+    <p>
+        <strong>
+            The Baganda, in whose territory this British settlement was located, then translated "Hill of the
+            Impala" as Akasozi ke'Empala. This was then shortened to K'empala and finally Kampala. Kasozi means
+            "hill", ke "of", and empala the plural of "impala". Hence the name "Kampala" came to refer to this
+            initial British colonial settlement that would later on spread out from the occupied Old Kampala hill
+            near the pre-existing Kibuga (capital) of the Buganda Kingdom.
+        </strong>
+    </p>
+    <div class="intro">
+        <p>
+            In my younger and more vulnerable years
+            my father gave me some advice that I've
+            been turning over in my mind ever since.
+            'Whenever you feel like criticizing anyone,' he told me,
+            'just remember that all the people in this world
+            haven't had the advantages that you've had.'Forests form distinctly different biomes at different latitudes
+            and elevations, and with different precipitation and evapotranspiration rates.[9] These biomes include
+            boreal forests in subarctic climates, tropical moist forests and tropical dry forests around the Equator,
+            and temperate forests at the middle latitudes. Forests form in areas of the Earth with high rainfall, while
+            drier conditions produce a transition to savanna. However, in areas with intermediate rainfall levels,
+            forest transitions to savanna rapidly when the percentage of land that is covered by trees drops below 40 to
+            45 percent.[10] Research conducted in the Amazon rainforest shows that trees can alter rainfall rates across
+            a region, releasing water from their leaves in anticipation of seasonal rains to trigger the wet season
+            early. Because of this, seasonal rainfall in the Amazon begins two to three months earlier than the climate
+            would otherwise allow.[11][12] Deforestation in the Amazon and anthropogenic climate change hold the
+            potential to interfere with this process, causing the forest to pass a threshold where it transitions into
+            savanna.[13]
+
+            Deforestation threatens many forest ecosystems. Deforestation occurs when humans remove trees from a
+            forested area by cutting or burning, either to harvest timber or to make way for farming. Most deforestation
+            today occurs in tropical forests. The vast majority of this deforestation is because of the production of
+            four commodities: wood, beef, soy, and palm oil.[14] Over the past 2,000 years, the area of land covered by
+            forest in Europe has been reduced from 80% to 34%. Large areas of forest have also been cleared in China and
+            in the eastern United States,[15] in which only 0.1% of land was left undisturbed.[16] Almost half of
+            Earth's forest area (49 percent) is relatively intact, while 9 percent is found in fragments with little or
+            no connectivity. Tropical rainforests and boreal coniferous forests are the least fragmented, whereas
+            subtropical dry forests and temperate oceanic forests are among the most fragmented. Roughly 80 percent of
+            the world's forest area is found in patches larger than 1 million hectares (2.5 million acres). The
+            remaining 20 percent is located in more than 34 million patches around the world – the vast majority less
+            than 1,000 hectares (2,500 acres) in size.[8]
+        </p>
+    </div>
+    <h2>All you need to know about forests</h2>
+    <p class="nom">
+        Deforestation threatens many forest ecosystems. Deforestation occurs when humans remove trees from a
+        forested area by cutting or burning, either to harvest timber or to make way for farming. Most deforestation
+        today occurs in tropical forests. The vast majority of this deforestation is because of the production of
+        four commodities: wood, beef, soy, and palm oil.[14] Over the past 2,000 years, the area of land covered by
+        forest in Europe has been reduced from 80% to 34%. Large areas of forest have also been cleared in China and
+        in the eastern United States,[15] in which only 0.1% of land was left undisturbed.[16] Almost half of
+        Earth's forest area (49 percent) is relatively intact, while 9 percent is found in fragments with little or
+        no connectivity. Tropical rainforests and boreal coniferous forests are the least fragmented, whereas
+        subtropical dry forests and temperate oceanic forests are among the most fragmented. Roughly 80 percent of
+        the world's forest area is found in patches larger than 1 million hectares (2.5 million acres). The
+        remaining 20 percent is located in more than 34 million patches around the world – the vast majority less
+        than 1,000 hectares (2,500 acres) in size.[8]
+    </p>
+    <div style="height: 200px;" class="dot">
+        <p>
+            Deforestation threatens many forest ecosystems. Deforestation occurs when humans remove trees from a
+            forested area by cutting or burning, either to harvest timber or to make way for farming. Most deforestation
+            today occurs in tropical forests. The vast majority of this deforestation is because of the production of
+            four commodities: wood, beef, soy, and palm oil.[14] Over the past 2,000 years, the area of land covered by
+            forest in Europe has been reduced from 80% to 34%. Large areas of forest have also been cleared in China and
+            in the eastern United States,[15] in which only 0.1% of land was left undisturbed.[16] Almost half of
+            Earth's forest area (49 percent) is relatively intact, while 9 percent is found in fragments with little or
+            no connectivity. Tropical rainforests and boreal coniferous forests are the least fragmented, whereas
+            subtropical dry forests and temperate oceanic forests are among the most fragmented. Roughly 80 percent of
+            the world's forest area is found in patches larger than 1 million hectares (2.5 million acres). The
+            remaining 20 percent is located in more than 34 million patches around the world – the vast majority less
+            than 1,000 hectares (2,500 acres) in size.[8]
+        </p>
+    </div>
+    <h3>The best book to read is the bible</h3>
+
+</body>
+
+</html>

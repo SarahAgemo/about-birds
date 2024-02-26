@@ -1,0 +1,259 @@
+#ug {
+    text-align: center;
+    color: red;
+    font-weight: 20px;
+    font-size: 30;
+}
+
+.clas2 {
+    text-align: left;
+    color: rgb(166, 25, 51);
+
+}
+
+.clas3 {
+    font-weight: 16px;
+    font-size: 20px;
+
+}
+
+* {
+    color: blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+}
+p:first-child{
+    background-color:aquamarine;
+}
+body {
+    /* background-image: url(./images/green1.jfif);
+     background-repeat: no-repeat;
+     background-position: top right;  */
+    /* background-attachment: fixed;  */
+    padding: 1px 30px 30px 40px;
+    background-image: url(./images/plainBoard.jpg), url(./images/desert.jpg);
+    background-size: 100px 80px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right top;
+}
+
+.myn {
+    border: 2px solid red;
+
+    border-radius: 5px;
+}
+
+
+
+#mine {
+    border-left-style: dotted;
+    text-transform: capitalize;
+    text-indent: 20px;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+h2 {
+    /* margin-left: 20px; */
+    margin: 20px 40px;
+    /* margin: auto; */
+    background-color: hsla(0, 100%, 50%, 0.3)
+    /* background-color: rgb(45, 218, 160, 0.2); */
+    
+}
+
+h1 {
+    /* position: relative;
+    top: 30px; */
+    /* position: absolute;
+    top: 5px; */
+    /* position: fixed;
+    top: 50px;
+    right: 10px; */
+    padding-top: 30px;
+    text-transform: uppercase;
+    /* visibility: hidden; */
+     /* display: none; */
+     background-color:  rgb(115, 150, 191, 0.2);
+}
+
+.us {
+    width: 200px;
+    /* border: 2px solid red; */
+    padding: 25px;
+    margin-left: 25px;
+    outline-style: solid;
+    outline-width: 5px;
+    outline: 4px dotted red;
+    text-align: center;
+    
+ 
+    
+    /* outline-color: chartreuse; */
+}
+/* .us :hover{
+    background-color: aquamarine;
+} */
+
+.us{
+    background: rgb(0, 217, 255);
+     border : bottom left  10px;  
+}
+
+
+a {
+    color: brown;
+}
+a:hover{
+    background-color:bisque;
+}
+
+a[target]{
+    background-color:bisque;
+
+}
+
+a:hover {
+    color: rgb(35, 7, 139);
+}
+
+a:visited {
+    color: aqua;
+}
+
+/* unvisited link  */
+a:link {
+    text-decoration: none;
+}
+
+/* visited link  */
+a:visited {
+    text-decoration: none;
+}
+
+/* mouse over link  */
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+
+    list-style-type: square;
+    /* list-style-type: none; */
+    /* list-style-image:url(./images/green1.jfif); */
+
+}
+
+/* margin creates spaces */
+
+ol {
+    list-style-type: lower-roman;
+}
+table, th, td {
+    border: 2px solid green;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+td{
+    text-align: center;
+    padding: 10px;;
+}
+th{
+    padding: 15px;
+    background-color: lightblue;
+}
+li{
+    /* display: inline; */
+}
+strong{
+    display: block;
+}
+
+#lo{
+    /* position: absolute;
+    top: 0;
+    z-index : 1;   */
+}
+
+#loo{
+    /* position: absolute;
+    top: 0;
+    z-index: 0;   */
+
+}
+.div1{
+    width: 500px;
+    height: 100px;
+    overflow: scroll;
+    text-align: justify;
+    overflow-x: scroll;
+    margin: auto;
+    color: red;
+    /* position: absolute; 
+    right: 0px; */
+    /* overflow: hidden; */
+}
+/* .div1+p{
+    color: red; }
+    .div+p{
+    color: red;}
+    */
+    /* .div1 :hover {
+        background-color: aquamarine;
+    } */
+    input:focus{
+        background-color: aqua;
+    }
+    .intro::first-line{
+    background-color: aqua;
+    }
+    .first::first-letter  {
+        background-color: aqua;
+
+    }
+    /* p::before {
+            content: url(./images/hearts.webp);
+            width: 50px; height: 50px;
+        }
+    p::after {
+          content: url(./images/hearts.webp);
+          width: 50px; height: 50px;
+        } */
+
+    .img{
+
+        opacity: 50%;
+    }
+    .img:hover{
+
+        opacity: 100%;
+    }
+    .intro{
+        border: 10px solid transparent;
+        border-image: url(../pics/IMG-20220327-WA0130.jpg) 30 round;
+        border-image-repeat: stretch;  
+        border-image-slice: 30;
+    }
+    .nom{
+        padding: 20px;
+        background-image: url(./images/plainBoard.jpg);
+        background-repeat: no-repeat;
+        background-origin: content-box;
+        color: rgb(252, 235, 0);
+        background-clip: padding-box;
+    }
+    .dot{
+        background-image: linear-gradient(white, green);
+        /* background-image: linear-gradient(to right, white, green); */
+        /* background-image: linear-gradient(to left, white, green); */
+        /* background-image: linear-gradient(to bottom right, white, green) */
+        background-image: linear-gradient(70deg,white, green);
+        /* background-image: radial-gradient(white, green); */
+        background-image: radial-gradient( circle , white ,  green );
+    }
+    h3{
+         text-shadow: 2px 2px 5px green;
+    }

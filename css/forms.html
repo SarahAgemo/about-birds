@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+   <form>
+    <h3>Study Form</h3>
+
+    <label for="fname">First name</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name</label><br>
+    <input type="text" id="lname" name="lname"><br>
+
+   <p><u>Forms of single choice</u></p> 
+
+     <input type="radio" id="html" name="fav_language" value="HTML">
+     <label for="html">HTML</label><br>
+     <input type="radio" id="css" name="fav_language" value="CSS" >
+     <label for="css">CSS</label><br>
+     <input type="radio" id="javascript" name="fav_language" value="JavaScript" >
+     <label for="javascript">JavaScript</label><br>
+
+    <p><u>Different types of vehicles</u> <br>(Multiple choice)
+    </p>
+
+     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+     <label for="vehicle1">I have a bike</label><br>
+     <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+     <label for="vehicle2"> I have a car</label><br>
+     <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+     <label for="vehicle3"> I have a boat</label><br>
+     
+
+     <!-- 
+        Forms have the action attribute that help link the submitted data to servers
+        ie  <form action="/action_page.php" or sarah.php or any other name>
+         we use POST and GET to send data to servers. GET is open to everyone
+         while POST secures your data ie sensitive info like loggins, bank details
+         through an incription.
+      -->
+
+      <p>Select is used for making drop down buttons</p>
+
+      <label for="cars"> Choose a car:</label>
+      <select id="cars" name="cars">
+
+        <option value="volvo">Volvo</option>
+        <option value="saab">saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    
+    </select><br>
+
+<p>Text area defines multi-line input</p>
+
+    <textarea name="message" rows="10" cols="50">
+The cat was playing in the garden
+    </textarea><br>
+
+    <input type="submit" value="Submit">
+    </form> 
+
+
+
+</body>
+</html>
